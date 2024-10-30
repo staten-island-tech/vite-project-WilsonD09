@@ -1,3 +1,4 @@
+@import "variables.css";
 html, body, *{
   margin: 0;
   padding: 0;
@@ -5,15 +6,7 @@ html, body, *{
   font-size: 10px;
 }
 
-:root{
-  --light-blue: #2998ff;
-  --dark-blue: #135cc5;
-  --light-red: #f87171;
-  --dark-red: #dc2626;
 
-  --primary: var(--dark-blue);
-  --h1: 7.594rem;
-}
 .warm{
   --primary:var(--light-red);
 }
