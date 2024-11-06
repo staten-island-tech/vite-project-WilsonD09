@@ -31,6 +31,10 @@ body{
   text-align: center;
 }
 
+.img{
+  height: 50%;
+}
+
 .liSize{
   font-size: 2rem;
 }

@@ -8,7 +8,7 @@ gpu.forEach(
     document.querySelector(".container").insertAdjacentHTML(
       "beforeend",
       `<div class="card" id="card-${cardNum}"><h3>${el["title"]}</h3>
-        <img src=${el["imageUrl"]} alt="${el["altText"]}>
+        <img class="img" src=${el["imageUrl"]} alt="${el["altText"]}>
         <ul><h5>Information:</h5>
         <li class="liSize">Release Year: ${el["releaseYear"]}</li>
         <li class="liSize">Price: ${el["price"]}</li>
