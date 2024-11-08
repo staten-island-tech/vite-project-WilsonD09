@@ -3,8 +3,8 @@ import { gpu } from "./items";
 
 let cardNum = 1;
 
-function createCards() {
-  gpu.forEach(
+function createCards(list) {
+  list.forEach(
     (el) => (
       document.querySelector(".container").insertAdjacentHTML(
         "beforeend",
@@ -14,19 +14,28 @@ function createCards() {
           <h5>Information:</h5>
           <ul>
           <li class="liSize">Release Year: ${el["releaseYear"]}</li>
-          <li class="liSize">Price: ${el["price"]}</li>
+          <li class="liSize">Price: $${el["price"]}</li>
           <li class="liSize">FPS in 1080p: ${el["fps1080p"]}</li>
-          <li class="liSize">Company: ${el["company"]}</li></ul></div>`
+          <li class="liSize">Company: ${el["company"]}</li></ul>
+          <button id="zoom-${cardNum}">Zoom</button></div>`
       ),
       (cardNum += 1)
     )
   );
 }
+createCards(gpu);
 
 function leastGreatest() {
-  document.getElementById("#");
+  document.querySelector("#l-g").addEventListener("click", () => {
+    document.querySelector(".container").innerHTML = "";
+    createCards(gpu.sort((x, y) => x.price - y.price));
+  });
 }
-createCards();
-
-/* .sort((x, y) => x.price - y.price)
- */
+function greatestLeast() {
+  document.querySelector("#g-l").addEventListener("click", () => {
+    document.querySelector(".container").innerHTML = "";
+    createCards(gpu.sort((x, y) => y.price - x.price));
+  });
+}
+greatestLeast();
+leastGreatest();

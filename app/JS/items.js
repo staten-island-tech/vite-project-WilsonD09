@@ -50,7 +50,7 @@ const gpu = [
     company: "AMD",
     price: 999,
     fps1080p: 195,
-    imageUrl: "",
+    imageUrl: "7900xtx.jpg",
     altText: "",
   },
   {
@@ -59,7 +59,7 @@ const gpu = [
     company: "AMD",
     price: 899,
     fps1080p: 175,
-    imageUrl: "",
+    imageUrl: "7900xt.jpg",
     altText: "",
   },
   {
@@ -68,7 +68,7 @@ const gpu = [
     company: "AMD",
     price: 499,
     fps1080p: 160,
-    imageUrl: "",
+    imageUrl: "7800xt.jpg",
     altText: "",
   },
   {
@@ -77,7 +77,7 @@ const gpu = [
     company: "AMD",
     price: 449,
     fps1080p: 150,
-    imageUrl: "",
+    imageUrl: "7700xt.jpg",
     altText: "",
   },
   {
@@ -86,7 +86,7 @@ const gpu = [
     company: "AMD",
     price: 269,
     fps1080p: 125,
-    imageUrl: "",
+    imageUrl: "7600.jpg",
     altText: "",
   },
   {
