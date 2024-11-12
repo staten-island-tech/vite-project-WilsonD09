@@ -16,14 +16,26 @@ function createCards(list) {
           <li class="liSize">Release Year: ${el["releaseYear"]}</li>
           <li class="liSize">Price: $${el["price"]}</li>
           <li class="liSize">FPS in 1080p: ${el["fps1080p"]}</li>
-          <li class="liSize">Company: ${el["company"]}</li></ul>
-          <button id="zoom-${cardNum}">Zoom</button></div>`
+          <li class="liSize">Company: ${el["company"]}</li></ul>`
       ),
       (cardNum += 1)
     )
   );
 }
 createCards(gpu);
+
+function sortAMD() {
+  document.querySelector("sortAMD").addEventListener("click", () => {
+    const AMD = gpu.filter((el) => el.company === "AMD");
+    createCards(AMD);
+  });
+}
+function sortnvd() {
+  document.querySelector("sortnvd").addEventListener("click", () => {
+    const NVD = gpu.filter((el) => el.company === "NVIDIA");
+    createCards(NVD);
+  });
+}
 
 function leastGreatest() {
   document.querySelector("#l-g").addEventListener("click", () => {
@@ -37,5 +49,8 @@ function greatestLeast() {
     createCards(gpu.sort((x, y) => y.price - x.price));
   });
 }
+
 greatestLeast();
 leastGreatest();
+sortAMD();
+sortnvd();

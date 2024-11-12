@@ -95,7 +95,7 @@ const gpu = [
     company: "AMD",
     price: 199,
     fps1080p: 80,
-    imageUrl: "",
+    imageUrl: "6500xt.jpg",
     altText: "",
   },
   {
@@ -104,7 +104,7 @@ const gpu = [
     company: "NVIDIA",
     price: 1999,
     fps1080p: 190,
-    imageUrl: "",
+    imageUrl: "3090ti.jpg",
     altText: "",
   },
   {
@@ -113,7 +113,7 @@ const gpu = [
     company: "AMD",
     price: 649,
     fps1080p: 170,
-    imageUrl: "",
+    imageUrl: "6800xt.jpg",
     altText: "",
   },
   {
@@ -122,7 +122,7 @@ const gpu = [
     company: "NVIDIA",
     price: 699,
     fps1080p: 165,
-    imageUrl: "",
+    imageUrl: "3080.jpg",
     altText: "",
   },
   {
@@ -131,7 +131,7 @@ const gpu = [
     company: "AMD",
     price: 479,
     fps1080p: 145,
-    imageUrl: "",
+    imageUrl: "6700xt.jpg",
     altText: "",
   },
   {
@@ -140,7 +140,7 @@ const gpu = [
     company: "NVIDIA",
     price: 599,
     fps1080p: 150,
-    imageUrl: "",
+    imageUrl: "3070ti.jpg",
     altText: "",
   },
   {
@@ -149,7 +149,7 @@ const gpu = [
     company: "AMD",
     price: 329,
     fps1080p: 115,
-    imageUrl: "",
+    imageUrl: "6600.jpg",
     altText: "",
   },
   {
@@ -158,7 +158,7 @@ const gpu = [
     company: "NVIDIA",
     price: 329,
     fps1080p: 120,
-    imageUrl: "",
+    imageUrl: "3060.jpg",
     altText: "",
   },
 ];
