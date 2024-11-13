@@ -30,11 +30,22 @@ body{
   margin-bottom: 5%;
   text-align: center;
 }
-
-.img{
-  height: 40%;
+.light{
+  background-color: var(--light);
 }
-
+.dark{
+  background-color: var(--dark);
+  color: var(--light);
+}
+.img{
+  height: 35%;
+}
+#red{
+  background-color: var(--red);
+}
+#green{
+  background-color: var(--green);
+}
 .liSize{
   font-size: 2rem;
 }
